@@ -2,6 +2,27 @@
 该Demo是展示《秀动》项目中自定义AlertView控件的使用，自定义类似系统UIAlertView的场景在开发中比较常见，所以将该控件开放出来，如果有需要的同学可以拿去用，或者作为参考。
 ## NemoAlertBaseView 
 该类是AlertView的基类，提供了show|hide方法，具体展示的Alert内容需要子类继承自己定义，也可以自己重载show|hide动画方法。
+创建一个AlertView
+```Objective-C
++ (id)creatAlertView;
+```
+/**
+ *  显示AlertView，子类可重载，自定义显示动画
+ *
+ *  @param animation  是否动画显示
+ *  @param completion 动画完成后的回调block
+ */
+```Objective-C
+- (void)show:(BOOL)animation completion:(void (^)(BOOL finished))completion;
+```
+/**
+ *  隐藏AlertView，子类可重载，自定义显示动画
+ *
+ *  @param animation 是否动画隐藏
+ */
+```Objective-C
+- (void)hide:(BOOL)animation;
+```
 ##NemoFilterUserView
 该类是一个自定义的AlertView，用来让用户筛选性别，比如一个UITableView中需要根据筛选条件显示附近用户。同时用POP动画引擎重写了show|hide动画。
 
