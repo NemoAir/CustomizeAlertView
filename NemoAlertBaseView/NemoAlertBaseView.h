@@ -35,7 +35,7 @@
  */
 - (void)show:(BOOL)animation completion:(void (^)(BOOL finished))completion;
 /**
- *  隐藏AlertView，子类可重载，在定义显示动画
+ *  隐藏AlertView，子类可重载，自定义显示动画
  *
  *  @param animation 是否动画隐藏
  */
