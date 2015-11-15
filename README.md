@@ -1,5 +1,10 @@
 # NemoAlertViewDemo
 该Demo是展示《秀动》项目中自定义AlertView控件的使用，自定义类似系统UIAlertView的场景在开发中比较常见，所以将该控件开放出来，如果有需要的同学可以拿去用，或者作为参考。
+
+
+![NemoFilterView](https://github.com/NemoAir/IMAGES/blob/master/NemoAlertView.gif)
+
+
 ## NemoAlertBaseView 
 该类是AlertView的基类，提供了show|hide方法，具体展示的Alert内容需要子类继承自己定义，也可以自己重载show|hide动画方法。
 创建一个AlertView
