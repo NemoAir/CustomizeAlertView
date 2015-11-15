@@ -8,29 +8,25 @@
 ## NemoAlertBaseView 
 该类是AlertView的基类，提供了show|hide方法，具体展示的Alert内容需要子类继承自己定义，也可以自己重载show|hide动画方法。
 
-/**
- * 创建一个AlertView
- */
 
+ * 创建一个AlertView
+ 
 ```Objective-C
 + (id)creatAlertView;
 ```
 
-/**
  *  显示AlertView，子类可重载，自定义显示动画
  *
  *  @param animation  是否动画显示
  *  @param completion 动画完成后的回调block
- */
 
 ```Objective-C
 - (void)show:(BOOL)animation completion:(void (^)(BOOL finished))completion;
 ```
-/**
+
  *  隐藏AlertView，子类可重载，自定义显示动画
  *
  *  @param animation 是否动画隐藏
- */
 
 ```Objective-C
 - (void)hide:(BOOL)animation;
